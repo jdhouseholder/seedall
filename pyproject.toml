@@ -1,6 +1,6 @@
 [project]
 name = "seedall"
-version = "0.1.0"
+version = "0.1.1"
 license = {text = "MIT"}
 description = "Seed all common RNGs in one call for reproducible experiments."
 readme = "README.md"

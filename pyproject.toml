@@ -1,0 +1,24 @@
+[project]
+name = "seedall"
+version = "0.1.0"
+license = {text = "MIT"}
+description = "Seed all common RNGs in one call for reproducible experiments."
+readme = "README.md"
+authors = [
+    { name = "jdh", email = "you@example.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+keywords = ["seed", "reproducibility", "random", "numpy", "pytorch", "tensorflow", "jax"]
+
+[build-system]
+requires = ["uv_build>=0.10.4,<0.11.0"]
+build-backend = "uv_build"
+
+[project.optional-dependencies]
+numpy = ["numpy"]
+torch = ["torch"]
+tensorflow = ["tensorflow"]
+jax = ["jax", "jaxlib"]
+all = ["numpy", "torch", "tensorflow", "jax", "jaxlib"]
+dev = ["pytest", "numpy"]

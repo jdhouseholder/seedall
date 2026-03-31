@@ -16,9 +16,4 @@ requires = ["uv_build>=0.10.4,<0.11.0"]
 build-backend = "uv_build"
 
 [project.optional-dependencies]
-numpy = ["numpy"]
-torch = ["torch"]
-tensorflow = ["tensorflow"]
-jax = ["jax", "jaxlib"]
-all = ["numpy", "torch", "tensorflow", "jax", "jaxlib"]
 dev = ["pytest", "numpy"]
